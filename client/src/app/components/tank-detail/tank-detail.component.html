@@ -1,0 +1,61 @@
+<div *ngIf="tank">
+  <h1>{{ tank.id | uppercase }} Details</h1>
+  <div><span>ID: </span>{{ tank.id }}</div>
+  <div>
+    <span>Descripción del Material: </span>{{ tank.matDescription }}
+  </div>
+  <div><span>Batch No: </span>{{ tank.batchNo }}</div>
+  <div><span>Cliente: </span>{{ tank.client }}</div>
+  <div><span>Start Date: </span>{{ tank.startDate }}</div>
+  <div><span>Delivery Date: </span>{{ tank.deliveryDate }}</div>
+  <div><span>Etapa Actual: </span>{{ tank.etapaActual }}</div>
+  <button type="button" class="btn btn-{{semaphore}}" >STATUS</button>
+  <div><span>Status: </span>{{ semaphore }}</div>
+  
+  <!-- <div>
+    <label for="tank-desc">Descripción del Material: </label>
+    <input
+      id="tank-desc"
+      [(ngModel)]="tank.matDescrption"
+      placeholder="Descripción"
+    /><br>
+    <label for="tank-batch">BatchNo: </label>
+    <input
+      id="tank-batch"
+      [(ngModel)]="tank.batchNo"
+      placeholder="Batch Number"
+    /><br>
+    <label for="tank-cliente">Cliente: </label>
+    <input
+      id="tank-cliente"
+      [(ngModel)]="tank.client"
+      placeholder="Cliente"
+    /><br>
+    <label for="tank-startDate">Start Date: </label>
+    <input
+      id="tank-startDate"
+      [(ngModel)]="tank.startDate"
+      placeholder="21/03/2021"
+    /><br>
+    <label for="tank-deliveryDate">Delivery Date: </label>
+    <input
+      id="tank-deliveryDate"
+      [(ngModel)]="tank.deliveryDate"
+      placeholder="21/03/2021"
+    /><br>
+    <label for="tank-etapaAct">Etapa Actual: </label>
+    <input
+      id="tank-etapaAct"
+      [(ngModel)]="tank.etapaActual"
+      placeholder="Entonado"
+    /><br>
+    <label for="tank-status">Status del Tanque: </label>
+    <input
+      id="tank-status"
+      [(ngModel)]="tank.status"
+      placeholder="Green"
+    /><br>
+  </div> -->
+  <button type="button" class="btn btn-outline-primary" (click)="goBack()">go back</button>
+
+</div>

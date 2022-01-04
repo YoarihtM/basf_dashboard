@@ -1,0 +1,237 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Estatus de Planta</h5>
+    <p class="card-text">Recipientes Ocupados: {{totalTanks}}</p>
+    <p class="card-text">Porcentaje On-Time: {{getPercentage(semaphoreGreen)}}% ({{semaphoreGreen}})</p>
+    <p class="card-text">Porcentaje Advertencia: {{getPercentage(semaphoreYellow)}}% ({{semaphoreYellow}})</p>
+    <p class="card-text">Porcentaje con Retraso: {{getPercentage(semaphoreRed)}}% ({{semaphoreRed}})</p>
+  </div>
+</div>
+<br>
+<div class="container">
+  <script></script>
+  <table>
+    <tbody>
+      <tr>
+        <td>..................</td>
+        <td>-</td>
+        <td>.............</td>
+        <td>-</td>
+        <td>.</td>
+        <td>-</td>
+        <td>............</td>
+        <td>-</td>
+        <td>.............</td>
+        <td>.</td>
+        <td>.....</td>
+        <td>-</td>
+        <td>.............</td>
+        <td>-</td>
+        <td>.........................</td>
+        <td>-</td>
+        <td>............</td>
+        <td>-</td>
+        <td>.............</td>
+        <td>-</td>
+        <td>..............</td>
+      </tr>
+      <tr>
+        .
+      </tr>
+      <tr>
+        .
+      </tr>
+      <tr>
+        <td>.</td>
+        <td class="left">
+          <button type="button" class="btn btn-{{ getStatus('TM23411') }} btn-sm" routerLink="/detail/TM23411">
+            23411
+          </button>
+        </td>
+        <td>.</td>
+        <td>
+          <button type="button" class="btn btn-{{ getStatus('TM23410') }} btn-sm" routerLink="/detail/TM23410">
+            23410
+          </button>
+        </td>
+        <td>.</td>
+        <td>
+          <button type="button" class="btn btn-{{ getStatus('TM23409') }} btn-sm" routerLink="/detail/TM23409">
+            23409
+          </button>
+        </td>
+        <td>.</td>
+        <td class="center">
+          <button type="button" class="btn btn-{{ getStatus('TM23408') }} btn-sm" routerLink="/detail/TM23408">
+            23408
+          </button>
+        </td>
+        <td>.</td>
+        <td>
+          <button type="button" class="btn btn-{{ getStatus('TM23407') }} btn-sm" routerLink="/detail/TM23407">
+            23407
+          </button>
+        </td>
+        <td>.</td>
+        <td>
+          <button type="button" class="btn btn-{{ getStatus('TM23406') }} btn-sm" routerLink="/detail/TM23406">
+            23406
+          </button>
+        </td>
+        <td>.</td>
+        <td>
+          <button type="button" class="btn btn-{{ getStatus('TM23405') }} btn-sm" routerLink="/detail/TM23405">
+            23405
+          </button>
+        </td>
+        <td>.</td>
+        <td>
+          <button type="button" class="btn btn-{{ getStatus('TM23417') }} btn-sm" routerLink="/detail/TM23417">
+            23417
+          </button>
+        </td>
+        <td>.</td>
+        <td>
+          <button type="button" class="btn btn-{{ getStatus('TM23403') }} btn-sm" routerLink="/detail/TM23403">
+            23403
+          </button>
+        </td>
+        <td>.</td>
+        <td>
+          <button type="button" class="btn btn-{{ getStatus('TM23402') }} btn-sm" routerLink="/detail/TM23402">
+            23402
+          </button>
+        </td>
+        <td>.</td>
+        <td>
+          <button type="button" class="btn btn-{{ getStatus('TM23401') }} btn-sm" routerLink="/detail/TM23401">
+            23401
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <tbody>
+      <tr>
+        .
+      </tr>
+      <tr>
+        .
+      </tr>
+      <tr>.</tr>
+      <tr>.</tr>
+      <tr>.</tr>
+      <tr>.</tr>
+      <tr>.</tr>
+      <tr>.</tr>
+      <tr>.</tr>
+      <tr>.</tr>
+      <tr>
+
+        <td>.</td>
+        <td>.</td>
+        <td>.</td>
+
+        <td class="center">
+          <button type="button" class="btn btn-{{ getStatus('TM23414') }} btn-sm" routerLink="/detail/TM23414">
+            23414
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>.</td>
+        <td class="center">
+          <button type="button" class="btn btn-{{ getStatus('AG23307') }} btn-sm" routerLink="/detail/AG23307">
+            AG 23307
+
+          </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>.</td>
+        <td class="center">
+          <button type="button" class="btn btn-{{ getStatus('AG23306') }} btn-sm" routerLink="/detail/AG23306">
+            AG 23306
+
+          </button>
+        </td>
+      </tr>
+      <tr>
+        .
+      </tr>
+      <tr>.</tr>
+
+      <tr>
+        <td>..............</td>
+        <td class="center">
+          <button type="button" class="btn btn-{{ getStatus('AG23303') }} btn-sm" routerLink="/detail/AG23303">
+            AG 23303
+
+          </button>
+        </td>
+        <td>.....................................................</td>
+
+        <td>
+          <button type="button" class="btn btn-{{ getStatus('TM23415') }} btn-sm" routerLink="/detail/TM23415">
+            23415
+          </button>
+        </td>
+      </tr>
+
+
+
+
+      <tr>
+        .
+      </tr>
+
+      <!-- Fifth Row -->
+      <tr>
+        <td></td>
+        <td class="center">
+          <button type="button" class="btn btn-{{ getStatus('AG23302') }} btn-sm" routerLink="/detail/AG23302">
+            AG 23302
+
+          </button>
+        </td>
+      </tr>
+      <!-- Last Row -->
+      <tr>
+        <td></td>
+
+        <td class="center">
+          <button type="button" class="btn btn-{{ getStatus('AG23301') }} btn-sm" routerLink="/detail/AG23301">
+            AG 23301
+
+          </button>
+        </td>
+        <!-- Horizontal Spacer -->
+        <td></td>
+
+
+        <td class="center">
+          <button type="button" class="btn btn-{{ getStatus('TM23416') }} btn-sm" routerLink="/detail/TM23416">
+            23416
+          </button>
+        </td>
+      </tr>
+      <!-- Bottom Spacers -->
+      <tr>
+        .
+      </tr>
+
+      <tr>
+        .
+      </tr>
+      <tr>
+        .
+      </tr>
+      <tr>
+        .
+      </tr>
+    </tbody>
+  </table>
+</div>

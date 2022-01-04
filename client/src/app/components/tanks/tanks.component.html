@@ -1,0 +1,25 @@
+<h2>Tanques</h2>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Estatus de Planta</h5>
+    <p class="card-text">Recipientes Ocupados: {{totalTanks}}</p>
+    <p class="card-text">Porcentaje On-Time: {{getPercentage(semaphoreGreen)}}% ({{semaphoreGreen}})</p>
+    <p class="card-text">Porcentaje Advertencia: {{getPercentage(semaphoreYellow)}}% ({{semaphoreYellow}})</p>
+    <p class="card-text">Porcentaje con Retraso: {{getPercentage(semaphoreRed)}}% ({{semaphoreRed}})</p>
+  </div>
+</div>
+<br>
+<ul class="tanks" data-columns="2">
+  <li *ngFor="let tank of tanks" (click)="onSelect(tank)" [class.selected]="tank === selectedTank">
+    <p class="badge">{{ tank.id }}</p>
+    <!-- TODO: BETTER FONT AND CAPS -->
+    <button type="button" class="btn btn-outline-{{ tank.status }}" routerLink="/detail/{{tank.id}}">{{ tank.etapaActual
+      }}</button>
+
+  </li>
+</ul>
+
+
+
+
+

@@ -1,0 +1,382 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Estatus de Planta</h5>
+    <p class="card-text">Recipientes Ocupados: {{totalTanks}}</p>
+    <p class="card-text">Porcentaje On-Time: {{getPercentage(semaphoreGreen)}}% ({{semaphoreGreen}})</p>
+    <p class="card-text">Porcentaje Advertencia: {{getPercentage(semaphoreYellow)}}% ({{semaphoreYellow}})</p>
+    <p class="card-text">Porcentaje con Retraso: {{getPercentage(semaphoreRed)}}% ({{semaphoreRed}})</p>
+  </div>
+</div>
+<br>
+<div class="container">
+  <table>
+    <tbody>
+      <!-- First Vertical Spacer -->
+      <div>
+        <tr>
+          .
+        </tr>
+        <tr>
+          .
+        </tr>
+        <tr>
+          .
+        </tr>
+        <tr>
+          .
+        </tr>
+        <tr>
+          .
+        </tr>
+        <tr>
+          .
+        </tr>
+        <tr>
+          .
+        </tr>
+
+      </div>
+      <!-- First Row -->
+      <div>
+        <tr>
+          <td>..............</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21432') }} btn-sm" routerLink="/detail/TM21432">
+              21432
+            </button>
+          </td>
+          <td>.....</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21433') }} btn-sm" routerLink="/detail/TM21433">
+              21433
+            </button>
+          </td>
+          <td>......</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21445') }} btn-sm" routerLink="/detail/TM21434">
+              21434
+            </button>
+          </td>
+          <td>......</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21435') }} btn-sm" routerLink="/detail/TM21435">
+              21435
+            </button>
+          </td>
+        </tr>
+      </div>
+      <!-- END OF ROW
+      
+      BEGINS SPACERS
+      -->
+      <div>
+        <tr>
+          .
+        </tr>
+        <tr>
+          .
+        </tr>
+        <tr>
+          .
+        </tr>
+        <tr>
+          .
+        </tr>
+        <tr>
+          .
+        </tr>
+      </div>
+      <!-- END OF SPACERS
+    
+          BEGINS SECOND ROW
+    -->
+      <div>
+        <tr>
+          <td>...........</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21435') }} btn-sm" routerLink="/detail/TM21435">
+              21435
+            </button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21428') }} btn-sm" routerLink="/detail/TM21428">
+              21428
+            </button>
+          </td>
+          <td>..</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21429') }} btn-sm" routerLink="/detail/TM21429">
+              21429
+            </button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21430') }} btn-sm" routerLink="/detail/TM21430">
+              21430
+            </button>
+          </td>
+          <td>..</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21431') }} btn-sm" routerLink="/detail/TM21431">
+              21431
+            </button>
+          </td>
+           <!-- LOTES PEQUEÑOS
+    -->
+          <td>...............................................................................................</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('AG2166') }} btn-sm" routerLink="/detail/AG2166">
+              AG 2166
+
+            </button>
+          </td>
+          <td>.</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('AG2165') }} btn-sm" routerLink="/detail/AG2165">
+              AG 2165
+
+            </button>
+          </td>
+          <td>.....................</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('AG2163') }} btn-sm" routerLink="/detail/AG2163">
+              AG 2163
+
+            </button>
+          </td>
+          <td>.</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('AG2162') }} btn-sm" routerLink="/detail/AG2162">
+              AG 2162
+
+            </button>
+          </td>          
+        </tr>
+      </div>
+      <!-- END OF SECOND ROW
+        
+            BEGINS SPACERS
+      -->
+      <div>
+        <tr>
+          .
+        </tr>
+        <tr>
+          .
+        </tr>
+        <!-- ENDO OF SPACERS
+            BEGINS third LINE
+           -->
+        <tr>
+          <td>...............................................................................................................................</td>
+          <td>......................................</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('AG2168') }} btn-sm" routerLink="/detail/AG2168">
+              AG 2168
+
+            </button>
+          </td>
+          <td>.</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('AG2167') }} btn-sm" routerLink="/detail/AG2167">
+              AG 2167
+
+            </button>
+          </td>
+          <td>..</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('AG2164') }} btn-sm" routerLink="/detail/AG2164">
+              AG 2164
+
+            </button>
+          </td>
+          <td>.....</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('AG22410') }} btn-sm" routerLink="/detail/AG22410">
+              AG 22410
+
+
+            </button>
+          </td>
+          <td>.</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('AG2170') }} btn-sm" routerLink="/detail/AG2170">
+              AG 2170
+
+
+            </button>
+          </td> 
+
+
+        </tr>
+        <tr>
+          .
+        </tr>
+        
+      </div>
+      <!-- ENDO OF THIRD LINE
+            BEGINS fourth LINE
+           -->
+      <div>
+        <tr>
+          <td>..........</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21422') }} btn-sm" routerLink="/detail/TM21422">
+              21422
+            </button>
+          </td>
+          <td>.</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21423') }} btn-sm" routerLink="/detail/TM21423">
+              21423
+            </button>
+          </td>
+          <td>..</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21424') }} btn-sm" routerLink="/detail/TM21424">
+              21424
+            </button>
+          </td>
+          <td>..</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21425') }} btn-sm" routerLink="/detail/TM21425">
+              21425
+            </button>
+          </td>
+          <TD>...</TD>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21426') }} btn-sm" routerLink="/detail/TM21426">
+              21426
+            </button>
+          </td>
+        </tr>
+      </div>
+      <!-- END OF THIRD LINE
+            BEGINS FOURTH LINE
+           -->
+      <div>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21421') }} btn-sm" routerLink="/detail/TM21421">
+              21421
+            </button>
+          </td>
+          <td>.............</td>
+
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21419') }} btn-sm" routerLink="/detail/TM21419">
+              21419
+            </button>
+          </td>
+          <td>..................</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21416') }} btn-sm" routerLink="/detail/TM21416">
+              21416
+            </button>
+          </td>
+          <td>..........</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21414') }} btn-sm" routerLink="/detail/TM21414">
+              21414
+            </button>
+          </td>
+          <td>............................................</td>
+          <td>................................</td>
+
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21407') }} btn-sm" routerLink="/detail/TM21407">
+              21407
+            </button>
+          </td>
+          <td>..........</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21406A') }} btn-sm" routerLink="/detail/TM21406A">
+              21406A
+            </button>
+          </td>
+          <td>........................</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21404') }} btn-sm" routerLink="/detail/TM21404">
+              21404
+            </button>
+          </td>
+          <td>........</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21402') }} btn-sm" routerLink="/detail/TM21402">
+              21402
+            </button>
+          </td>
+
+        </tr>
+      </div>
+      <!-- END OF FOURTH LINE
+        BEGINS SPACER -->
+      <div>
+
+        <tr>
+          .
+        </tr>
+        <tr>
+          .
+        </tr>
+
+      </div>
+      <!-- END OF SPACER
+            BEGIN FIFTH LINE -->
+
+      <div>
+        <tr>
+          <td>.........</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21420') }} btn-sm" routerLink="/detail/TM21420">
+              21420
+            </button>
+          </td>
+          <td>.......................</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21417') }} btn-sm" routerLink="/detail/TM21417">
+              21417
+            </button>
+          </td>
+          <td>.........</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21415') }} btn-sm" routerLink="/detail/TM21415">
+              21415
+            </button>
+          </td>
+          <td>..........</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21413') }} btn-sm" routerLink="/detail/TM21413">
+              21413
+            </button>
+          </td>
+          <td>.................................................................</td>
+          <td>............</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21406B') }} btn-sm" routerLink="/detail/TM21406B">
+              21406B
+            </button>
+          </td>
+          <td>........................</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21405') }} btn-sm" routerLink="/detail/TM21405">
+              21405
+            </button>
+          </td>
+          <td>........</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21403') }} btn-sm" routerLink="/detail/TM21403">
+              21403
+            </button>
+          </td>
+          <td>.........</td>
+          <td>
+            <button type="button" class="btn btn-{{ getStatus('TM21401') }} btn-sm" routerLink="/detail/TM21401">
+              21401
+            </button>
+          </td>
+        </tr>
+
+      </div>
+    </tbody>
+  </table>
+</div>

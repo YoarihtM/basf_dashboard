@@ -1,0 +1,25 @@
+.container{
+    background: url("../../../assets/baseSolvente.png");
+    background-size:100%;
+}
+
+td.left{
+    text-align: left;
+
+}
+td.right{
+    text-align: right;
+
+}
+td.center{
+    text-align: center;
+
+}
+.btn-sm {
+    max-width: 110%;
+   font-size: x-small;
+   
+}
+.btn-primary{
+    background-color: blueviolet;
+}
